@@ -82,8 +82,7 @@ workflows:
         ignore_failure: true
       - name: Flutter build ipa and automatic versioning
         script: |
-          flutter build ipa --release
-            --export-options-plist=/Users/builder/export_options.plist
+          flutter build ipa --release --export-options-plist=/Users/builder/export_options.plist
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
